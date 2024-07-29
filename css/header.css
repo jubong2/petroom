@@ -1,1 +1,60 @@
 @charset "UTF-8";
+.header {
+  position: relative;
+  width: 100%;
+}
+
+/* 헤더 탑 */
+.header-top {
+  width: 100%;
+}
+.header-logo {
+  width: 264px;
+  margin: auto;
+  padding: 65px 0;
+}
+
+.header-logo img {
+  width: 100%;
+}
+.mb-menu {
+  width: 31px;
+  height: 25px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: none;
+}
+
+.mb-menu img {
+  width: 100%;
+}
+
+/* 헤더 바 */
+.header-bar {
+  width: 100%;
+}
+
+.header-bar-left {
+  position: absolute;
+  width: 60%;
+}
+
+.header-menu {
+  display: flex;
+}
+
+.header-menu-kind {
+  width: calc(100% / 4);
+}
+.header-menu-title {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.header-menu-wrap {
+  display: none;
+}
+.header-menu-kind:hover .header-menu-wrap {
+  display: block;
+}
