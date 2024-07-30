@@ -9,6 +9,7 @@
 @import url("adoption.css");
 @import url("join.css");
 @import url("footer.css");
+@import url("respons.css");
 /* 폰트 */
 @import url("font.css");
 
@@ -19,6 +20,10 @@
   list-style: none;
 }
 
+html {
+  font-size: 12px;
+}
+
 a {
   text-decoration: none;
   color: #333;
@@ -26,5 +31,6 @@ a {
 
 .inner {
   margin: 0 auto;
-  width: 1500px;
+  width: 80%;
+  position: relative;
 }
