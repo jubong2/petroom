@@ -19,6 +19,9 @@
   border: 0;
   list-style: none;
 }
+html {
+  font-size: 12px;
+}
 
 html {
   font-size: 12px;
@@ -32,5 +35,31 @@ a {
 .inner {
   margin: 0 auto;
   width: 80%;
+
+  background-color: aqua;
   position: relative;
+}
+.product-top img {
+  width: 100%;
+  margin: 0 auto;
+}
+.product-info {
+  width: 100%;
+  display: flex;
+}
+.product-text {
+  background-color: aquamarine;
+  width: 40%;
+}
+.productSlide {
+  width: 60%;
+  background-color: pink;
+}
+
+.swiper-wrapper > li {
+  width: 50%;
+}
+.swiper-wrapper > li > a > img {
+  width: 100%;
+
 }
