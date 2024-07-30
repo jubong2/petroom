@@ -20,13 +20,16 @@
   list-style: none;
 }
 html {
-  font-size: 12px;
+  font-size: 10px;
 }
 
-html {
-  font-size: 12px;
+body {
+  word-break: keep-all;
 }
-
+img {
+  vertical-align: middle;
+  border: 0;
+}
 a {
   text-decoration: none;
   color: #333;
@@ -34,9 +37,8 @@ a {
 
 .inner {
   margin: 0 auto;
-  width: 80%;
-
-  background-color: aqua;
+  width: 70%;
+  /* background-color: aqua; */
   position: relative;
 }
 .product-top img {
@@ -61,5 +63,4 @@ a {
 }
 .swiper-wrapper > li > a > img {
   width: 100%;
-
 }
