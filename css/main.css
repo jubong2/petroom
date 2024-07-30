@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("style.css");
 @import url("header.css");
 @import url("banner.css");
 @import url("category.css");
@@ -34,33 +35,9 @@ a {
   text-decoration: none;
   color: #333;
 }
-
 .inner {
   margin: 0 auto;
   width: 70%;
-  /* background-color: aqua; */
+  background-color: aqua;
   position: relative;
-}
-.product-top img {
-  width: 100%;
-  margin: 0 auto;
-}
-.product-info {
-  width: 100%;
-  display: flex;
-}
-.product-text {
-  background-color: aquamarine;
-  width: 40%;
-}
-.productSlide {
-  width: 60%;
-  background-color: pink;
-}
-
-.swiper-wrapper > li {
-  width: 50%;
-}
-.swiper-wrapper > li > a > img {
-  width: 100%;
 }

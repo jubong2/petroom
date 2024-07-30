@@ -1,0 +1,71 @@
+@charset "UTF-8";
+/* 메인페이지 카테고리 공통스타일 */
+/* 메인 카테고리별 배너이미지(gif) */
+.product-top img {
+  width: 100%;
+  margin: 0 auto;
+}
+/* 카테고리 배너 하단 text, 상품리스트(슬라이드) */
+.product-info {
+  width: 100%;
+  display: flex;
+}
+/* 카테고리 배너 하단 왼쪽 Text 상자 */
+.product-text {
+  /* background-color: aquamarine; */
+  width: 25%;
+  text-align: left;
+  padding: 15px 0;
+}
+.product-text > h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  letter-spacing: 5px;
+  padding: 10px 0;
+}
+.product-text > p {
+  width: 90%;
+  font-size: 1.6rem;
+  line-height: 20px;
+  letter-spacing: 2px;
+}
+.product-text > p {
+  margin-bottom: 30px;
+}
+/* 메인 카테고리 배너 하단 오른쪽 슬라이드 */
+.productSlide {
+  width: 70%;
+  /* background-color: pink; */
+  padding: 10px;
+  height: 100%;
+}
+.swiper-slide {
+  line-height: 2rem;
+}
+.swiper-slide > h4 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin: 15px 0;
+}
+.swiper-slide > p {
+  font-size: 1.4rem;
+  text-align: right;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  letter-spacing: 0.1rem;
+}
+.swiper-slide > p:first-of-type {
+  text-align: left;
+  margin-bottom: 15px;
+}
+.swiper-slide > p:last-of-type {
+    color:red;
+    font-weight: 600;
+    font-size: 1.6rem;
+}
+.productSlide > .swiper-wrapper > li > a > img {
+  width: 100%;
+}
