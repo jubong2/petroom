@@ -1,1 +1,24 @@
 @charset "UTF-8";
+
+.category {
+  width: 100%;
+}
+
+.category-wrap {
+  margin: 0 auto;
+  width: 30%;
+  display: flex;
+  gap: 20px;
+}
+.category-kind {
+  background-color: rgb(212, 155, 80);
+  width: calc(100% / 4);
+}
+
+.category-name {
+  text-align: center;
+}
+
+.category-kind img {
+  width: 100%;
+}
