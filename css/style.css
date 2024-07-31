@@ -85,22 +85,21 @@
   width: 100%;
   text-align: center;
   height: auto;
-  /* background-color: pink; */
   margin: 150px auto;
 }
 .product-button > a{
   width: 50%;
-  color:#2e2e2ec4;
+  color:#fff;
   font-size: 1.8rem;
   font-weight: bold;
-  /* background-color: aqua; */
+  background-color: #ffc000;
   text-align: center;
-  border: 1px solid#5f5f5fc4;
+  /* border: 1px solid#5f5f5fc4; */
   border-radius: 40px;
   padding:20px 45px;
   margin: 0 auto;
 }
 .product-button > a > i {
-  color: #5f5f5fc4;
+  color:#fff;
   padding-left: 20px;
 }
