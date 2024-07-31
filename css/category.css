@@ -6,19 +6,27 @@
 
 .category-wrap {
   margin: 0 auto;
-  width: 30%;
+  width: 40%;
   display: flex;
   gap: 20px;
-}
-.category-kind {
-  background-color: rgb(212, 155, 80);
-  width: calc(100% / 4);
+  margin-bottom: 100px;
+
 }
 
+.category-kind {
+  width: calc(100% / 4);
+  margin: 0 auto;
+}
 .category-name {
   text-align: center;
 }
 
 .category-kind img {
   width: 100%;
+}
+
+.category-name {
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 20px 0;
 }
