@@ -4,11 +4,15 @@
 }
 
 @media screen and (max-width: 768px) {
+  .mb-menu-bar {
+    display: block;
+  }
+  .header-bar-right {
+    display: none;
+  }
 }
 @media screen and (max-width: 320px) {
   .mb-menu {
     display: block;
   }
-
- 
 }

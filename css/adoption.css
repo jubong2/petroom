@@ -1,1 +1,42 @@
 @charset "UTF-8";
+
+/* adoption-top */
+.adoption-top {
+  text-align: center;
+}
+.adoption-title {
+  font-size: 4rem;
+  font-weight: bold;
+  letter-spacing: 2rem;
+}
+.adoption-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+}
+.adoption-button p {
+  font-size: 2rem;
+  letter-spacing: 5px;
+}
+
+.buttom-img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+/*  */
+.adoption-main {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  background-color: antiquewhite;
+}
+.pet {
+  width: calc(100% / 4);
+  border: 1px solid #333;
+  padding: 10px;
+}
+.pet img {
+  width: 100%;
+}

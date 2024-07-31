@@ -3,6 +3,35 @@
   position: fixed;
   z-index: 9999;
   width: 100%;
+  transition: all 0.5s;
+}
+.banner {
+  padding-top: 0px;
+}
+
+/*헤더 js적용 */
+
+.header.active .header-top {
+  height: 100px;
+  transition: all 0.5s;
+}
+.header.active .header-logo {
+  transition: all 0.5s;
+  width: 100px;
+  padding: 15px 0;
+}
+.header.active .header-bar {
+  height: 30px;
+}
+
+.header.active .header-menu-name {
+  font-size: 1.5rem;
+  line-height: 30px;
+}
+
+.header.active .header-bar-icon {
+  font-size: 1.5rem;
+  letter-spacing: 1.5rem;
 }
 
 /* 헤더 탑 */
@@ -98,30 +127,21 @@
   top: 50%;
   right: 0;
   transform: translateY(-50%);
+
 }
 .header-bar-icon {
   font-size: 2rem;
   letter-spacing: 2rem;
 }
-
-/*헤더 js적용 */
-.header:hover .header-top {
-  height: 100px;
+/* 모바일 메뉴바 */
+.mb-menu-bar {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 25px;
+  display: none;
 }
-.header:hover .header-logo {
-  width: 100px;
-  padding: 15px 0;
-}
-.header:hover .header-bar {
-  height: 30px;
-}
-
-.header:hover .header-menu-name{
-  font-size: 1.5rem;
-  line-height: 30px;
-}
-
-.header:hover .header-bar-icon {
-  font-size: 1.5rem;
-  letter-spacing: 1.5rem;
+.mb-menu-bar img {
+  width: 100%;
 }
