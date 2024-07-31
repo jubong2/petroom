@@ -1,1 +1,20 @@
 @charset "UTF-8";
+
+.join {
+  width: 100%;
+  background-color: #fbf8ef;
+}
+.join-warp {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.join-img {
+  width: 20%;
+  background-color: aqua;
+}
+.join-img img {
+  width: 100%;
+}
+.join-content {
+}

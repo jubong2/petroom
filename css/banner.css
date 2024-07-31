@@ -27,6 +27,8 @@
 }
 .banner.bannerActive {
   padding: 0px;
+  opacity: 0.5;
+  transition: opacity 0.3s;
 }
 /* 쿠폰 */
 .coupon {
