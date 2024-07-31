@@ -4,7 +4,7 @@ window.addEventListener("load",function () {
     spaceBetween: 10,
     // centeredSlides: true,
     autoplay: {
-    delay: 2500,
+    delay: 1000000,
     disableOnInteraction: false,
     },
   });
