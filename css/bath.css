@@ -1,1 +1,28 @@
 @charset "UTF-8";
+/* 1번 상품썸네일 애프터 */
+.productSlide > .swiper-wrapper > .swiper-slide > a > .tag1{
+    width: 20%;
+    position: absolute;
+    top: 0;
+    right: 0px;
+  }
+  /* 2번,3번,5번 상품썸네일 애프터 */
+  .productSlide > .swiper-wrapper > .swiper-slide > a > .tag2{
+      width: 20%;
+      position: absolute;
+      top: 0;
+      right: 24%;
+    }
+  .productSlide > .swiper-wrapper > .swiper-slide > a > .tag3{
+    width: 24.5%;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  /* 4번 상품썸네일 애프터 추가 */
+  .productSlide > .swiper-wrapper > .swiper-slide > a > .tag4{
+    width: 24.5%;
+    position: absolute;
+    top: 0;
+    right: 44%;
+  }

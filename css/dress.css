@@ -1,2 +1,15 @@
 @charset "UTF-8";
-
+/* 1번,2번 상품썸네일 애프터 */
+.productSlide > .swiper-wrapper > .swiper-slide > a > .tag1 {
+  width: 20%;
+  position: absolute;
+  top: 0;
+  right: 0px;
+}
+/*  3번,4번,5번 상품썸네일 애프터*/
+.productSlide > .swiper-wrapper > .swiper-slide > a > .tag6 {
+  width: 25%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}

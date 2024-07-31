@@ -1,10 +1,10 @@
 window.addEventListener("load",function () {
     var swpr = new Swiper(".productSlide", {
     slidesPerView: 3,
-    spaceBetween: 10,
+    spaceBetween: 25,
     // centeredSlides: true,
     autoplay: {
-    delay: 1000000,
+    delay: 2500,
     disableOnInteraction: false,
     },
   });
