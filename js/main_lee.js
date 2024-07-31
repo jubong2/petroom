@@ -7,10 +7,10 @@ window.addEventListener("load", function () {
     scy = this.window.document.documentElement.scrollTop;
     if (scy > 0) {
       header.classList.add("active");
-      banner.classList.add("bannerActive")
+      banner.classList.add("bannerActive");
     } else {
       header.classList.remove("active");
-      banner.classList.remove("bannerActive")
+      banner.classList.remove("bannerActive");
     }
   });
 });

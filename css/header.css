@@ -5,9 +5,6 @@
   width: 100%;
   transition: all 0.5s;
 }
-.banner {
-  padding-top: 0px;
-}
 
 /*헤더 js적용 */
 
@@ -34,6 +31,14 @@
   letter-spacing: 1.5rem;
 }
 
+.header.active .header-menu-submenu {
+  top: 30px;
+}
+
+/* 
+.header.active .header-menu-submenu {
+  top: 0;
+} */
 /* 헤더 탑 */
 .header-top {
   height: 200px;
@@ -129,7 +134,6 @@
   top: 50%;
   right: 0;
   transform: translateY(-50%);
-
 }
 .header-bar-icon {
   font-size: 2rem;
