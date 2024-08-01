@@ -13,4 +13,13 @@ window.addEventListener("load", function () {
       banner.classList.remove("bannerActive");
     }
   });
+
+  var swiper = new Swiper(".ad-Swiper", {
+    slidesPerView: 4,
+    spaceBetween: 30,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+      },
+  });
 });
