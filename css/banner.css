@@ -3,7 +3,6 @@
 .banner {
   margin-bottom: 100px;
   padding-top: 260px;
-  transition: all 0.5s;
 }
 
 .banner-img {
@@ -11,7 +10,7 @@
   margin-bottom: 100px;
 }
 
-.banner-img img {
+.banner-img  img {
   width: 100%;
   transform: scale(1.2);
 }
@@ -27,8 +26,6 @@
 }
 .banner.bannerActive {
   padding: 0px;
-  opacity: 0.5;
-  transition: opacity 0.3s;
 }
 /* 쿠폰 */
 .coupon {
@@ -38,6 +35,6 @@
   margin: 0 auto;
 }
 
-.coupon img {
+.coupon  img {
   width: 100%;
 }

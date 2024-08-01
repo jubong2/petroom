@@ -2,19 +2,33 @@
 
 .join {
   width: 100%;
-  background-color: #fbf8ef;
+  padding: 50px 0;
+  margin-bottom: 200px;
+  background-color: #FBF8EF;
 }
 .join-warp {
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
 }
 .join-img {
   width: 20%;
-  background-color: aqua;
 }
-.join-img img {
+.join-img > img {
   width: 100%;
 }
+
+/* 가입하기 text */
 .join-content {
+  width: 50%;
+}
+
+.join-text {
+  text-align: center;
+  font-size: 3rem;
+  padding-bottom: 100px;
+}
+.join-button {
+  margin: 0px auto;
 }

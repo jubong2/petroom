@@ -43,4 +43,5 @@ a {
   width: 70%;
   /* background-color: aqua; */
   position: relative;
+  /* overflow: hidden; */
 }
