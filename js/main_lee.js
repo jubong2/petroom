@@ -20,7 +20,8 @@ window.addEventListener("load", function () {
     autoplay: {
       delay: 2500,
       disableOnInteraction: false,
-      },
-      loop:true
+    },
+    loop: true,
+    breakpoints: { 780: { slidesPerView: 4 }, 320: { slidesPerView: 2 } },
   });
 });

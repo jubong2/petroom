@@ -63,8 +63,8 @@
   position: absolute;
   top: 0;
   right: 0;
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   background-color: #fd2bb7;
   margin: auto;
   font-size: 1.5rem;
@@ -72,6 +72,7 @@
   text-align: center;
   color: #fff;
 }
+
 .pet-info {
   width: 100%;
   padding-top: 10px;
@@ -112,4 +113,22 @@
 
 .pet-button {
   font-size: 3rem;
+}
+/* 반응형 */
+
+@media screen and (max-width: 768px) {
+  .adoption {
+    padding-top: 50px;
+  }
+
+  .adoption-title {
+    margin-bottom: 30px;
+  }
+  .inoculation {
+    width: 30px;
+    height: 30px;
+  }
+  .adoption-button {
+    margin-bottom: 50px;
+  }
 }
