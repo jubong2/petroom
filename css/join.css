@@ -2,33 +2,14 @@
 
 .join {
   width: 100%;
-  padding: 50px 0;
-  margin-bottom: 200px;
-  background-color: #FBF8EF;
+  height: 300px;
 }
-.join-warp {
+.join > .inner{
+  width: 70%;
+}
+.join-content{
   width: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-.join-img {
-  width: 20%;
-}
-.join-img > img {
-  width: 100%;
-}
-
-/* 가입하기 text */
-.join-content {
-  width: 50%;
-}
-
-.join-text {
-  text-align: center;
-  font-size: 3rem;
-  padding-bottom: 100px;
-}
-.join-button {
-  margin: 0px auto;
+  height: auto;
+  background: url("../images/joinbt.jpg") no-repeat center;
+  background-size: cover;
 }
