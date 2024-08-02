@@ -4,7 +4,6 @@
   z-index: 9999;
   width: 100%;
   transition: all 0.5s;
-
 }
 
 /*헤더 js적용 */
@@ -76,7 +75,6 @@
   position: relative;
   width: 100%;
   height: 60px;
-  /* background-color: #ffd43b; */
   background-color: #ffc000;
 }
 
@@ -152,4 +150,38 @@
 }
 .mb-menu-bar img {
   width: 100%;
+}
+/* 반응형 */
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 7.5px;
+  }
+  .mb-menu-bar {
+    display: block;
+  }
+  .header-bar-right {
+    display: none;
+  }
+  .header-top {
+    height: 150px;
+  }
+
+  .header-logo {
+    width: 150px;
+  }
+  .header-bar {
+    height: 40px;
+  }
+  .header-menu-name {
+    line-height: 40px;
+  }
+  .header-menu-submenu {
+    position: absolute;
+    top: 40px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .mb-menu {
+    display: block;
+  }
 }
