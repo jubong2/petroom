@@ -21,5 +21,6 @@ window.addEventListener("load", function () {
       delay: 2500,
       disableOnInteraction: false,
       },
+      loop:true
   });
 });
