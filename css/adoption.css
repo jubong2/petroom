@@ -2,7 +2,6 @@
 
 /* adoption-top */
 .adoption {
-  background-color: aqua;
   width: 100%;
   padding-top: 100px;
   margin-bottom: 200px;
@@ -36,77 +35,81 @@
 }
 /* 펫 정보 */
 .pet-from {
+  position: relative;
   width: 100%;
 }
+
+.pet-fieldset {
+  border: 1px solid #333; /* 검정색 테두리 설정 */
+  padding: 10px 20px; /* 패딩 설정 */
+}
+
+.pet-name {
+  width: 30%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+}
 .pet-img {
-  background-color: beige;
+  position: relative;
   width: 100%;
+  margin-bottom: 10px;
 }
 
 .pet-image {
   width: 100%;
 }
-.pet-fieldset {
-  text-align: center;
-  border: 2px solid #000; /* 검정색 테두리 설정 */
-  padding: 10px; /* 패딩 설정 */
-}
-
-/* ============================================================ */
-/* 펫 정보 */
-/* .adoption-main {
-  width: 100%;
-  display: flex;
-  gap: 20px;
-  text-align: center;
-}
-
-.pet {
-  width: calc(100% / 4);
-  border: 1px solid #333;
-  padding: 20px;
-}
-
-.pet-go {
-  width: 100%;
-}
-.pet img {
-  width: 100%;
-}
-
-.pet-name {
-  width: 200px;
-  font-size: 2rem;
-  font-weight: bold;
-  border-top: 1px solid #333;
-  border-bottom: 1px solid #333;
-  padding: 10px 0;
-  margin: 20px auto;
-}
-.pet-info-wrap {
-  width: 70%;
-  margin: 0 auto;
-  display: flex;
-
-  justify-content: space-between;
-}
-
-.pet-inoculation {
-  width: 50px;
-  line-height: 25px;
-  background-color: yellow;
+.inoculation {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  background-color: #fd2bb7;
+  margin: auto;
   font-size: 1.5rem;
   font-weight: bold;
-  letter-spacing: 2px;
   text-align: center;
-  display: block;
+  color: #fff;
+}
+.pet-info {
+  width: 100%;
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+  /* justify-content: space-around; */
+  justify-content: space-between;
+}
+.pet-info-text-warp {
+  font-size: 1.5rem;
+  width: 80%;
+  text-align: center;
 }
 
-.pet-info {
-  width: 150px;
-  line-height: 50px;
-  display: block;
+.pet-info-text {
+  width: 100%;
+  margin-bottom: 10px;
+  display: flex;
+  font-weight: bold;
+  letter-spacing: 0.5rem;
+}
+.pet-note {
+  padding: 2px 0;
+  width: 40%;
+  color: #fff;
+  background-color: #ffc000;
+  font-size: 1.2rem;
+}
+.pet-note-infor {
+  width: 60%;
+  border-bottom: 1px solid #ffc000;
+}
+.pet-info-button {
   text-align: center;
-  font-size: 2rem;
-} */
-/* 입양하단 */
+  display: inline;
+  font-size: 3rem;
+}
+
+.pet-button {
+  font-size: 3rem;
+}
