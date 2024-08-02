@@ -1,11 +1,13 @@
-window.addEventListener("load",function () {
-    var swpr = new Swiper(".productSlide", {
+window.addEventListener("load", function () {
+  var swpr = new Swiper(".productSlide", {
     slidesPerView: 3,
     spaceBetween: 25,
     // centeredSlides: true,
     autoplay: {
-    delay: 2500,
-    disableOnInteraction: false,
+      delay: 2500,
+      disableOnInteraction: false,
     },
+    loop: true,
+    breakpoints: { 780: { slidesPerView: 3 }, 320: { slidesPerView: 2 } },
   });
 });

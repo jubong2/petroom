@@ -3,6 +3,7 @@
 .banner {
   margin-bottom: 100px;
   padding-top: 260px;
+  transition: all 0.5s;
 }
 
 .banner-img {
@@ -41,7 +42,11 @@
 /* 반응형 */
 @media screen and (max-width: 768px) {
   .banner {
-    padding-top: 130px;
+    margin-bottom: 50px;
+    padding-top: 190px;
   }
-
+  .banner-img,
+  .banner-text {
+    margin-bottom: 50px;
+  }
 }

@@ -111,13 +111,16 @@
   width: calc(100% / 4);
   position: absolute;
   top: 60px;
-  display: none;
+  opacity: 0;
+  visibility: hidden;
   background-color: #fff;
   z-index: 999;
+  transition: opacity 0.5s, visibility 0.5s, top 0.5s;
   line-height: 40px;
 }
 .header-menu-kind:hover .header-menu-submenu {
-  display: block;
+  opacity: 1;
+  visibility: visible;
   transition-timing-function: linear;
 }
 
@@ -178,6 +181,7 @@
   .header-menu-submenu {
     position: absolute;
     top: 40px;
+    line-height: 30px;
   }
 }
 @media screen and (max-width: 320px) {
