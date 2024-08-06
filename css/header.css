@@ -158,9 +158,6 @@
 }
 /* 반응형 */
 @media screen and (max-width: 768px) {
-  html {
-    font-size: 7.5px;
-  }
   .mb-menu-bar {
     display: block;
   }
@@ -187,9 +184,6 @@
   }
 }
 @media screen and (max-width: 320px) {
-  html {
-    font-size: 5px;
-  }
   .mb-menu {
     display: block;
   }
