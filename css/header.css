@@ -187,7 +187,20 @@
   }
 }
 @media screen and (max-width: 320px) {
+  html {
+    font-size: 5px;
+  }
   .mb-menu {
     display: block;
+  }
+
+  .header-top {
+    height: 100px;
+  }
+  .header-logo {
+    width: 70px;
+  }
+  .header-bar {
+    height: 20px;
   }
 }

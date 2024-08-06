@@ -1,6 +1,6 @@
 window.addEventListener("load", function () {
   var swpr = new Swiper(".productSlide", {
-    slidesPerView: 3,
+    slidesPerView: 1,
     spaceBetween: 25,
     // centeredSlides: true,
     autoplay: {
