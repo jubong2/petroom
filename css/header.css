@@ -111,9 +111,11 @@
   width: calc(100% / 4);
   position: absolute;
   top: 60px;
+
+  display: none;
+  background-color: #ffeaa9;
   opacity: 0;
   visibility: hidden;
-  background-color: #fff;
   z-index: 999;
   transition: opacity 0.5s, visibility 0.5s, top 0.5s;
   line-height: 40px;
