@@ -190,8 +190,6 @@
 @media screen and (max-width: 320px) {
   .mb-menu-bar {
     display: none;
-  }
-
   .mb-menu {
     display: block;
   }
