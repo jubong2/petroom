@@ -101,9 +101,8 @@
   width: calc(100% / 4);
   position: absolute;
   top: 60px;
-  max-height: 0;
-  overflow: hidden;
-  background-color: #ffeaa9;
+  display: none;
+  background-color: #fddb769a;
   opacity: 0;
   visibility: hidden;
   z-index: 999;
@@ -212,4 +211,5 @@
   .mb-menu img {
     width: 100%;
   }
+}
 }

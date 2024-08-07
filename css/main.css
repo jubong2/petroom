@@ -11,6 +11,7 @@
 @import url("adoption.css");
 @import url("join.css");
 @import url("footer.css");
+@import url("gotop.css");
 
 /* 폰트 */
 
@@ -79,5 +80,5 @@ a {
 
   .inner {
     width: 90%;
-  }
+
 }
