@@ -11,6 +11,7 @@
 @import url("adoption.css");
 @import url("join.css");
 @import url("footer.css");
+@import url("gotop.css");
 
 /* 폰트 */
 
@@ -19,6 +20,7 @@
   padding: 0;
   border: 0;
   list-style: none;
+  box-sizing: border-box;
 }
 html {
   font-size: 10px;
@@ -61,10 +63,16 @@ a {
   }
 }
 @media screen and (max-width: 600px) {
+  html {
+    font-size: 5px;
+  }
 }
 
 @media screen and (max-width: 320px) {
   html {
-    font-size: 5px;
+    font-size: 4px;
+  }
+  .inner{
+    width: 100%;
   }
 }

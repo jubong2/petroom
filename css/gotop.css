@@ -1,0 +1,108 @@
+@charset "utf-8";
+.top-button {
+  position: fixed;
+  right: 30px;
+  bottom: 60px;
+  z-index: 9999999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.chat-btn {
+  animation: updown 1.5s infinite;
+}
+.chat-btn img {
+  width: 55px;
+  border-radius: 50%;
+  box-shadow: 0px 3px 7px 0 rgb(0, 0, 0, 0.3);
+}
+/* 애니메이션 효과 */
+@keyframes updown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.chat-btn span {
+  font-size: 12px;
+  font-weight: 600;
+  position: absolute;
+  top: 34px;
+  left: -186px;
+  width: 200px;
+  background-color: #fff;
+  border-radius: 23px;
+  padding: 8px 10px;
+  text-align: center;
+  box-shadow: 0px 3px 7px 0 rgb(0, 0, 0, 0.3);
+  /* display: none; */
+  transition: all 0.5s;
+}
+.chat-btn:hover span {
+  display: block;
+}
+.sns-btn {
+  position: relative;
+  display: block;
+  width: 55px;
+  line-height: 55px;
+  background-color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  border-radius: 50%;
+  box-shadow: 0px 3px 7px 0 rgb(0, 0, 0, 0.3);
+}
+.gotop-snsIcons .insta{
+    font-size: 12px;
+    font-weight: 600;
+    position: absolute;
+    top: 144px;
+    left: -50px;
+    background-color: #fff;
+    border-radius: 23px;
+    padding: 8px 10px;
+    text-align: center;
+    box-shadow: 0px 3px 7px 0 rgb(0, 0, 0, 0.3);
+    /* display: none; */
+    transition: all 0.5s;
+  }
+  .gotop-snsIcons .face{
+    font-size: 12px;
+    font-weight: 600;
+    position: absolute;
+    top: 144px;
+    left: -80px;
+    background-color: #fff;
+    border-radius: 23px;
+    padding: 8px 10px;
+    text-align: center;
+    box-shadow: 0px 3px 7px 0 rgb(0, 0, 0, 0.3);
+    /* display: none; */
+    transition: all 0.5s;
+  }
+
+.gotop-snsIcons:hover p{
+    display: block;
+  }
+  
+.top-btn {
+  background-color: #ffc000;
+  width: 55px;
+  line-height: 55px;
+  border-radius: 50%;
+  text-align: center;
+  box-shadow: 0px 3px 7px 0 rgb(0, 0, 0, 0.3);
+}
+.top-btn img {
+  transform: rotate(180deg);
+}
+.top-btn img.up {
+  transform: rotate(0deg);
+}
