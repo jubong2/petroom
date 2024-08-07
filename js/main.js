@@ -8,6 +8,6 @@ window.addEventListener("load", function () {
       disableOnInteraction: false,
     },
     loop: true,
-    breakpoints: { 780: { slidesPerView: 3 }, 320: { slidesPerView: 2 } },
+    breakpoints: { 780: { slidesPerView: 3 }, 320: { slidesPerView: 2, spaceBetween: 10 } },
   });
 });

@@ -19,6 +19,7 @@
   padding: 0;
   border: 0;
   list-style: none;
+  box-sizing: border-box;
 }
 html {
   font-size: 10px;
@@ -36,12 +37,17 @@ a {
   text-decoration: none;
   color: #333;
 }
+
+.warp {
+  width: 100%;
+  position: relative;
+}
+
 .inner {
   margin: 0 auto;
   width: 70%;
-  /* background-color: aqua; */
   position: relative;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 .footer {
   width: 100%;
@@ -61,10 +67,17 @@ a {
   }
 }
 @media screen and (max-width: 600px) {
+  html {
+    font-size: 5px;
+  }
 }
 
 @media screen and (max-width: 320px) {
   html {
-    font-size: 5px;
+    font-size: 4px;
+  }
+
+  .inner {
+    width: 90%;
   }
 }
