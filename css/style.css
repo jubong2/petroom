@@ -123,5 +123,31 @@
   .product-button > a {
     padding: 15px 45px;
   }
-  .swiper-slide > h4{font-size: 1.7rem;}
+  .swiper-slide > h4 {
+    font-size: 1.7rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .product-text > p {
+    line-height: 15px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .product-text > h1 {
+    font-size: 3rem;
+  }
+  .product-text > p {
+    line-height: 12px;
+    letter-spacing: 0px;
+  }
+
+  .swiper-slide > h4 {
+    margin: 15px 0;
+    background-color: #ffc000;
+  }
+  .swiper-slide > p:first-of-type {
+    margin-top: 0px;
+    margin-bottom: 15px;
+    background-color: aqua;
+  }
 }

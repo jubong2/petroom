@@ -60,21 +60,6 @@
   width: 100%;
 }
 
-/* 모바일 메뉴바 */
-.mb-menu {
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  top: 35%;
-  right: 0;
-  /* transform: translateY(-50%); */
-  display: none;
-}
-
-.mb-menu img {
-  width: 100%;
-}
-
 /* 헤더 바 */
 .header-bar {
   position: relative;
@@ -121,15 +106,15 @@
   opacity: 0;
   visibility: hidden;
   z-index: 999;
-  transition: opacity 0.5s, visibility 0.5s, top 0.5s;
+  transition: opacity 0.5s, visibility 0.5s, top 0.5s, max-height 0.5s;
   line-height: 40px;
 }
+
 .header-menu-kind:hover .header-menu-submenu {
+  max-height: 200px;
   opacity: 1;
   visibility: visible;
-  transition-timing-function: linear;
 }
-
 .header-submenu-inner {
   display: block;
   text-align: center;
@@ -160,6 +145,10 @@
 .mb-menu-bar img {
   width: 100%;
 }
+.mb-header {
+  display: none;
+}
+
 /* 반응형 */
 @media screen and (max-width: 768px) {
   .mb-menu-bar {
@@ -187,27 +176,40 @@
     line-height: 30px;
   }
 }
+
 @media screen and (max-width: 320px) {
-  .mb-menu-bar {
+  .header {
     display: none;
-  .mb-menu {
-    display: block;
   }
-  .headder {
-    position: fixed; /* 수정된 부분 */
-  }
-  .header-top {
+
+  /* 모바일 헤더-600 */
+
+  .mb-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     height: 50px;
-    background-color: #ffeaa9;
+    z-index: 999999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
   }
-  .header-logo {
-    width: 50px;
+  .mb-logo {
+    width: 70%;
+    text-align: center;
+    color: #ffc000;
+    font-size: 6rem;
+    font-weight: 1000;
   }
-  .header-bar {
-    display: none;
+  .mb-menu {
+    width: 20px;
+    height: 20px;
   }
-  .active {
-    display: none;
+
+  .mb-menu img {
+    width: 100%;
   }
 }
 }

@@ -8,7 +8,7 @@ window.addEventListener("load", function () {
       disableOnInteraction: false,
     },
     loop: true,
-    breakpoints: { 780: { slidesPerView: 3 }, 320: { slidesPerView: 2 } },
+    breakpoints: { 780: { slidesPerView: 3 }, 320: { slidesPerView: 2, spaceBetween: 10 } },
   });
   // top버튼 스크롤 기능=======================
   const topBtn = document.getElementById("top-btn")
