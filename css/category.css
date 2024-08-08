@@ -40,3 +40,16 @@
     margin-bottom: 50px;
   }
 }
+@media screen and (max-width: 600px) {
+  .category-name {
+    font-size: 3rem;
+  }
+  .category-wrap {
+    width: 100%;
+  }
+
+  .coupon {
+    flex-direction: column;
+    width: 70%;
+  }
+}
