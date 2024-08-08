@@ -101,6 +101,7 @@
   width: calc(100% / 4);
   position: absolute;
   top: 60px;
+  display: none;
   background-color: #fddb769a;
   opacity: 0;
   visibility: hidden;

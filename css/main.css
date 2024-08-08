@@ -44,13 +44,13 @@ a {
 .warp {
   width: 100%;
   position: relative;
+  display: block;
 }
 
 .inner {
   margin: 0 auto;
   width: 70%;
   position: relative;
-  overflow: hidden;
 }
 .footer {
   width: 100%;
