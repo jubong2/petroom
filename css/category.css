@@ -29,6 +29,12 @@
   font-weight: bold;
   padding: 20px 0;
 }
+/* 반응형 */
+@media screen and (max-width: 1230px) {
+  .category-wrap {
+    margin-bottom: 70px;
+  }
+}
 @media screen and (max-width: 768px) {
   .category-wrap {
     margin-bottom: 50px;

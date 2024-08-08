@@ -24,6 +24,8 @@
 }
 html {
   font-size: 10px;
+  min-width: 320px;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -71,14 +73,13 @@ a {
   html {
     font-size: 5px;
   }
+  .inner {
+    width: 90%;
+  }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 400px) {
   html {
     font-size: 4px;
   }
-
-  .inner {
-    width: 90%;
-
 }
