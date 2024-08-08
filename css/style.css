@@ -10,33 +10,29 @@
 .product-info {
   width: 100%;
   display: flex;
+  margin-top: 20px;
 }
 /* 카테고리 배너 하단 왼쪽 Text 상자 */
 .product-text {
-  /* background-color: aquamarine; */
-  width: 25%;
+  width: 30%;
   text-align: left;
-  padding: 15px 0;
 }
 .product-text > h1 {
-  font-size: 4rem;
+  font-size: 6rem;
   font-weight: bold;
   letter-spacing: 5px;
-  padding: 10px 0;
 }
 .product-text > p {
   width: 90%;
-  font-size: 1.8rem;
-  line-height: 20px;
+  font-size: 2rem;
+  line-height: 1.7;
   letter-spacing: 2px;
-}
-.product-text > p {
   margin-bottom: 30px;
 }
+
 /* 메인 카테고리 배너 하단 오른쪽 슬라이드 */
 .productSlide {
   width: 70%;
-  /* background-color: pink; */
   padding: 10px;
   height: 100%;
 }
@@ -50,9 +46,13 @@
   line-height: 2rem;
 }
 .swiper-slide > h4 {
+  height: auto;
   font-size: 2rem;
   font-weight: 600;
   margin: 25px 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .swiper-slide > p {
   font-size: 1.5rem;
@@ -105,37 +105,119 @@
 }
 
 /* 반응형 */
-@media screen and (max-width: 768px) {
-  .product-text {
-    width: 30%;
-  }
+@media screen and (max-width: 1400px) {
   .product-text > h1 {
-    padding: 5px 0;
+    font-size: 4.5rem;
+  }
+  .product-text > p {
+    letter-spacing: 1px;
+    line-height: 1.2;
+    font-size: 2rem;
+  }
+  .swiper-slide > h4 {
+    margin: 20px 0;
   }
 
-  .product-text > p:last-of-type {
-    display: none;
+  .swiper-slide > p:first-of-type {
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  .swiper-slide > p:nth-last-of-type(2) {
+    width: calc(100% / 2);
+    display: inline;
+    float: left;
+    font-size: 1.5rem;
+  }
+  .swiper-slide > p:last-of-type {
+    width: calc(100% / 2);
+    display: inline;
+    float: right;
+    font-size: 1.5rem;
+    margin: 0;
+    text-align: center;
+  }
+  .swiper-slide > p > span {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .product-text > h1 {
+    font-size: 3rem;
+  }
+  .product-text > p {
+    font-size: 1.8rem;
+    line-height: 1.2;
+    letter-spacing: 0px;
+  }
+  .swiper-slide > p:nth-last-of-type(2) {
+    font-size: 1.3rem;
+  }
+  .swiper-slide > p:last-of-type {
+    font-size: 1.3rem;
   }
   .product-button {
     margin: 80px auto;
   }
+  .product-button a {
+    padding: 15px 30px;
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .product-text > h1 {
+    font-size: 3.4rem;
+  }
+  .product-text > p {
+    font-size: 1.8rem;
+    line-height: 1.5;
+  }
+  .product-button {
+    margin: 50px auto;
+  }
+  .swiper-slide > p:first-of-type {
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .product-info {
+    flex-direction: column;
+  }
+  .product-text {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+  }
 
-  .product-button > a {
-    padding: 15px 45px;
+  .productSlide {
+    width: 100%;
+  }
+
+  .product-text > h1 {
+    font-size: 4rem;
+    margin: 10px 0;
+  }
+  .product-text > p {
+    font-size: 2.5rem;
+    line-height: 1.5;
   }
   .swiper-slide > h4 {
-    font-size: 1.7rem;
-  }
-}
-@media screen and (max-width: 500px) {
-  .product-text > p {
-    line-height: 15px;
-  }
-}
-@media screen and (max-width: 320px) {
-  .product-text > h1 {
     font-size: 3rem;
+    margin: 5px 0; /* 상하 패딩 줄이기 */
+    background-color: #ffc000;
+    padding: 5px; /* 패딩 추가 */
   }
+  .swiper-slide > p:first-of-type {
+    margin-top: 10px;
+    font-size: 3.5rcap;
+  }
+}
+@media screen and (max-width: 400px) {
+  .product-text > h1 {
+    font-size: 3.5rem;
+  }
+
   .product-text > p {
     line-height: 12px;
     letter-spacing: 0px;

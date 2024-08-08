@@ -40,6 +40,13 @@
   width: 100%;
 }
 /* 반응형 */
+
+@media screen and (max-width: 1230px) {
+  .banner-img,
+  .banner-text {
+    margin-bottom: 70px;
+  }
+}
 @media screen and (max-width: 768px) {
   .banner {
     margin-bottom: 50px;
@@ -49,23 +56,25 @@
   .banner-text {
     margin-bottom: 50px;
   }
+  .banner-text {
+    width: 70%;
+  }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 600px) {
   .banner {
     padding-top: 50px;
     margin-bottom: 50px;
   }
-
-  .banner-img,
-  .banner-text {
-    margin-bottom: 30px;
-  }
   .banner-text {
     width: 80%;
   }
-
   .coupon {
     gap: 10px;
   }
+  .banner .inner {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 320px) {
 }
