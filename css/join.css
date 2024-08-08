@@ -3,37 +3,75 @@
 .join{
   width: 100%;
 }
+.join .inner{
+  width: 1200px;
+}
 .join-wrap{
   width: 100%;
   height: auto;
   position: relative;
 }
 .join-wrap img{
-  width: 69.4vw;
+  width: 1200px;
+  object-fit: cover;
+  /* width: 69.4vw; */
   /* height: 38vh; */
+}
+.reSpon1080{
+  width: 100%;
+  display: none;
+  object-fit: cover;
 }
 .join-content{
   width: 40%;
   display: flex;
   position: absolute;
-  top: 30%;
+  top: 26%;
   left:15%;
   flex-direction: column;
   /* background-color: pink; */
 }
 .join-text{
-  font-size:1.7vw;
+  font-size:2.6rem;
   font-weight: bolder;
   color: #fff;
 }
 .join-content > a{
-  width: 30%;
+  width: 45%;
   color: #fff;
-  font-size: 1vw;
+  font-size: 2rem;
   font-weight: bold;
   text-align: center;
-  padding: 5%;
+  padding: 4.7%;
   margin: 5% 0;
   border-radius: 40px;
   background-color: #ffc000;
 }
+/* 반응형 */
+@media screen and (max-width: 1200px) {
+  .join .inner{
+    width: 100%;
+  } 
+}
+@media screen and (max-width: 1080px) {
+  .join .inner{
+    width: 100%;
+  } 
+  .oriBn{
+    display: none;
+  }
+  .reSpon1080{
+    width: 100% !important;
+    object-fit: cover;
+    display: block;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .join-text{
+    font-size: 22px;
+  }
+  .join-content > a{
+    font-size: 18px;
+  }
+}
+
