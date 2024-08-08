@@ -15,13 +15,13 @@ window.addEventListener("load", function () {
   });
 
   var swiper = new Swiper(".ad-Swiper", {
-    slidesPerView: 4,
-    spaceBetween: 30,
+    slidesPerView: 1,
+    spaceBetween: 10,
     autoplay: {
       delay: 2500,
       disableOnInteraction: false,
     },
     loop: true,
-    breakpoints: { 780: { slidesPerView: 4 }, 320: { slidesPerView: 2 } },
+    breakpoints: { 1400: { slidesPerView: 4 }, 1100: {slidesPerView: 3 }, 700: { slidesPerView: 2}, 601: { slidesPerView: 2 } },
   });
 });
