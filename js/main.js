@@ -17,7 +17,7 @@ window.addEventListener("load", function () {
     console.log(window.scrollY);
     if (window.scrollY == 0) {
       window.scrollTo({
-        top: 2777,
+        top: 7970,
         behavior: "smooth",
       });
     } else {
@@ -37,4 +37,4 @@ window.addEventListener("load", function () {
       topBtnImg.classList.remove("up");
     }
   });
-  });
+});

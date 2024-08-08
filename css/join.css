@@ -1,5 +1,4 @@
 @charset "UTF-8";
-
 .join {
   width: 100%;
   min-width: 345px;
@@ -13,7 +12,8 @@
   position: relative;
 }
 .join-wrap img {
-  width: 1200px;
+  width: 100%;
+  max-width: 1200px;
   object-fit: cover;
   /* width: 69.4vw; */
   /* height: 38vh; */
@@ -54,7 +54,7 @@
     width: 100%;
   }
 }
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1050px) {
   .join .inner {
     width: 100%;
   }
