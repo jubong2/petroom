@@ -1,14 +1,14 @@
 window.addEventListener("load", function () {
   var swpr = new Swiper(".productSlide", {
-    slidesPerView: 1,
-    spaceBetween: 25,
+    slidesPerView: 2,
+    spaceBetween: 20,
     // centeredSlides: true,
     autoplay: {
       delay: 2500,
       disableOnInteraction: false,
     },
     loop: true,
-    breakpoints: { 780: { slidesPerView: 3 }, 320: { slidesPerView: 2, spaceBetween: 10 } },
+    breakpoints: { 1100: { slidesPerView: 3 }, 600: { slidesPerView: 2 } },
   });
   // top버튼 스크롤 기능=======================
   const topBtn = document.getElementById("top-btn");

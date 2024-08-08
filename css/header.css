@@ -177,7 +177,8 @@
   }
 }
 
-@media screen and (max-width: 320px) {
+
+@media screen and (max-width: 600px) {
   .header {
     display: none;
   }
@@ -211,5 +212,4 @@
   .mb-menu img {
     width: 100%;
   }
-}
 }
