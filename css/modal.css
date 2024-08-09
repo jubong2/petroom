@@ -1,0 +1,64 @@
+@charset "utf-8";
+/* 모달창 */
+.modal-wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999999;
+}
+.modal-main {
+  width: 50%;
+  max-height: 500px;
+  max-width: 600px;
+  min-width: 280px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 20px;
+  box-shadow: 0px 3px 7px 0 rgb(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+.modal-main img {
+  width: 100%;
+  height: 100%;
+}
+.modal-close {
+  width: 100%;
+  font-size: 1.6rem;
+  background-color: #fdfcfc;
+  padding: 17px;
+  border-radius: 0 0 20px 20px;
+  cursor: pointer;
+}
+.modal-close > p:first-child {
+  padding-right: 100px;
+  border-right: 1px solid#333;
+}
+.modal-close ul {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.modal-close ul li {
+  width: calc(100% / 2);
+}
+.modal-close ul li button {
+  background-color: #fff;
+  text-decoration: none;
+}
+.modal-close ul li:first-child {
+  border-right: 1.3px solid#969696b9;
+}
+@media screen and (max-width: 768px) {
+  .modal-close ul li {
+    font-size: 14px;
+  }
+}
