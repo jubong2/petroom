@@ -87,7 +87,7 @@
     gap: 25px;
   }
 }
-@media screen and (max-width: 1055px) {
+@media screen and (max-width: 1060px) {
   .footer-bottom > .inner {
     width: 80%;
   }
