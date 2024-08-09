@@ -28,32 +28,32 @@ window.addEventListener("load", function () {
   // 모바일 메뉴바 클릭하면 메뉴 나오는거
   const mbNavi = document.querySelector(".mb-navi");
   const mbBtn = document.querySelector(".mb-menu");
-  const htmlRoot = document.querySelector("html");
-  const mbmenubarBtn = this.document.querySelector(".mb-menu-bar");
+  const mbmenubarBtn = document.querySelector(".mb-menu-bar");
+  const head = document.querySelector(".header");
+  const mbhead = document.querySelector(".mb-header");
+  const closeBtn = document.querySelector(".closeBtn");
 
   mbBtn.addEventListener("click", function () {
-    // 현재 버튼에 'mbactive' 클래스가 있는지 확인합니다.
-    const mbActive = mbBtn.classList.contains("mbactive");
-    if (mbActive) {
-      // 'mbactive' 클래스가 있으면 제거합니다.
-      mbBtn.classList.remove("mbactive");
-      mbNavi.classList.remove("mbactive");
-      htmlRoot.classList.remove("mbactive");
-    } else {
-      // 'mbactive' 클래스가 없으면 추가합니다.
-      mbBtn.classList.add("mbactive");
-      mbNavi.classList.add("mbactive");
-      htmlRoot.classList.add("mbactive");
-    }
+    mbNavi.classList.toggle("mbactive");
+    mbhead.classList.toggle("hdactive");
   });
+  closeBtn.addEventListener("click", function () {
+    mbNavi.classList.remove("mbactive");
+    mbhead.classList.remove("hdactive");
+    head.classList.remove("hdactive");
+  });
+
   mbmenubarBtn.addEventListener("click", function () {
-    const mbActive = mbBtn.classList.contains("mbactive");
-    if (mbActive) {
-      mbmenubarBtn.classList.remove("mbactive");
+    mbNavi.classList.toggle("mbactive");
+    head.classList.toggle("hdactive");
+  });
+
+  // 창 크기가 768px 이상일 때 mbactive 제거
+  window.addEventListener("resize", function () {
+    if (window.innerWidth >= 768 && mbNavi.classList.contains("mbactive")) {
       mbNavi.classList.remove("mbactive");
-    } else {
-      mbmenubarBtn.classList.add("mbactive");
-      mbNavi.classList.add("mbactive");
+      head.classList.remove("hdactive");
+      mbhead.classList.remove("hdactive");
     }
   });
 });

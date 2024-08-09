@@ -132,12 +132,11 @@
   transform: translateY(-50%);
   width: 25px;
   display: none;
-  background-color: #fff;
 }
 .mb-menu-bar img {
   width: 100%;
 }
-
+/*================================================================  */
 /* 반응형 모바일 헤더-600이하 */
 .mb-header {
   width: 100%;
@@ -163,31 +162,80 @@
 .mb-menu img {
   width: 100%;
 }
+
+/* mb-navi li  */
+
+.mb-navi-header {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  background-color: #ffc000;
+}
+
+.mb-navi-icon {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 40%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.mb-navi-icon > i {
+  font-size: 4.5rem;
+}
+.mb-navi-kind {
+  font-size: 6rem;
+  line-height: 2;
+  cursor: pointer;
+}
+
+.mb-navi-kind {
+  font-weight: bold;
+}
+
+.mb-submenu {
+  display: none;
+}
+.mb-navi-kind:hover .mb-submenu {
+  display: block;
+}
+.mb-submenu-txt {
+  font-size: 4rem;
+  line-height: 2;
+  opacity: 0.8;
+}
+.mb-nav {
+  padding: 10px 10px;
+}
 /* 모바일 navi-active */
 .mb-navi {
   position: absolute;
   /* 모바일때 header의 높이 */
-  top: 50px;
-  right: -100%;
-  width: 80%;
+  top: 0px;
+  left: 0%;
+  width: 100%;
   /* 브라우저 전체높이 100vh */
-  height: calc(100vh - 70px);
-  background-color: #fff;
+  height: 100vh;
   transition: all 0.3s ease-in-out;
   opacity: 0;
-  z-index: 9;
+  z-index: 999;
+  background-color: #fff;
 }
 
 .mb-navi.mbactive {
+  display: block;
   right: 0% !important;
   opacity: 1 !important;
 }
 
-.mb-navi-kind {
-  font-size: 6rem;
-  line-height: 2;
+.header.hdactive {
+  display: none;
 }
 
+.mb-header.hdactive {
+  display: none;
+}
 /* 반응형 */
 @media screen and (max-width: 768px) {
   .mb-menu-bar {
