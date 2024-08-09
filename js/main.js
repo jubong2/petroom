@@ -37,4 +37,33 @@ window.addEventListener("load", function () {
       topBtnImg.classList.remove("up");
     }
   });
+  //모달창(안내창)=========================
+  const body = document.querySelector("body");
+  const modal = document.querySelector(".modal-wrap");
+  const modalClose = document.querySelector(".modal-close");
+  // isOpen 값에 따라 스크롤을 제어하는 함수
+  function controlScroll(isOpen) {
+    if (isOpen) {
+      body.style.overflow = "hidden";
+    } else {
+      body.style.overflow = "auto";
+    }
+  }
+  // 초기 모달창 상태 설정
+  const isOpen = true;
+  controlScroll(isOpen);
+  modalClose.addEventListener("click", function () {
+    modal.style.display = "none";
+    // 모달창이 닫히면 스크롤이 재활성화됨
+    controlScroll(false);
+  });
+  // 마우스 커서 따라다니기
+  document.addEventListener('mousemove', (e) => {
+    let mouseX = e.pageX + 10; // document의 x좌표값
+    let mouseY = e.pageY + 10; // document의 y좌표값
+
+    let cursor = document.querySelector('.cursor');
+    cursor.style.left = mouseX + 'px';
+    cursor.style.top = mouseY + 'px';
+})
 });
