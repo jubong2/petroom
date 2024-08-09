@@ -142,6 +142,7 @@
 
   .adoption-title {
     margin-bottom: 30px;
+    font-size: 5rem;
   }
   .inoculation {
     width: 30px;
@@ -149,20 +150,12 @@
   }
   .adoption-button {
     margin-bottom: 50px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .adoption-top{
+  }  .adoption-top{
     gap:0px;
-  }
-  .adoption-title {
-    font-size: 5rem;
   }
   .adoption-title p{
     font-size: 16px;
-  }
-  .adoption-button p {
+  }  .adoption-button p {
     font-size: 3rem;
   }
   .adoption-button span i{
@@ -173,7 +166,7 @@
     width: 3rem;
     height: 3rem;
   }
-}
+
 
 @media screen and (max-width: 600px) {
   .adoption-button{
@@ -193,9 +186,7 @@
     font-size: 4rem;
     overflow: auto;
   }
-  .pet-info-text {
-    font-size: 3rem;
-  }
+
   .pet-fieldset {
     display: flex;
   }
@@ -206,8 +197,12 @@
     width: 60%;
     padding: 10px;
   }
+  .pet-info-text {
+    font-size: 3rem;
+  }
   .pet-note {
     padding: 5px 0;
+    font-size: 3rem;
   }
   .pet-note-infor {
     padding: 5px 0;
