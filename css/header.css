@@ -139,27 +139,29 @@
 /*================================================================  */
 /* 반응형 모바일 헤더-600이하 */
 .mb-header {
-
+  background-color: #fff;
   overflow: hidden;
   width: 100%;
   height: 50px;
   display: none;
-  position: fixed;
   z-index: 99999;
-  align-items: center;
-  justify-content: space-evenly;
-  background-color: #ff9494;
+  background-color: #fff;
 }
 .mb-logo {
+  width: 100%;
+  line-height: 50px;
+  margin: auto;
   text-align: center;
   color: #ffc000;
   font-size: 6rem;
   font-weight: 1000;
-  background-color: azure;
 }
 .mb-menu {
+  margin: auto;
   width: 40px;
   height: 40px;
+  float: right;
+  margin-right: 30px;
 }
 .mb-menu img {
   width: 100%;
