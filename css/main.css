@@ -63,7 +63,7 @@ a {
 }
 .cursor {
   position: absolute;
-  z-index: 99999999999999999999;
+  z-index: 9999999999999;
 }
 
 @media screen and (max-width: 1050px) {
@@ -73,6 +73,8 @@ a {
   html {
     font-size: 7px;
   }
+  .cursor {
+    display: none;
 }
 @media screen and (max-width: 600px) {
   html {
