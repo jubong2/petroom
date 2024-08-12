@@ -1,6 +1,9 @@
 @charset "UTF-8";
 
 .banner {
+  /* display: none; */
+  overflow: hidden;
+  width: 100%;
   margin-bottom: 100px;
   padding-top: 260px;
   transition: all 0.5s;
@@ -20,7 +23,6 @@
   margin: 0 auto;
   width: 50%;
   margin-bottom: 100px;
-  
 }
 
 .banner-text img {
