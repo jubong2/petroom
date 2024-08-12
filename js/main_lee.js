@@ -36,6 +36,7 @@ window.addEventListener("load", function () {
   mbBtn.addEventListener("click", function () {
     mbNavi.classList.toggle("mbactive");
     mbhead.classList.toggle("hdactive");
+    window.scrollTo(0, 0);
   });
   closeBtn.addEventListener("click", function () {
     mbNavi.classList.remove("mbactive");
