@@ -211,9 +211,8 @@
 /* 모바일 navi-active */
 .mb-navi {
   position: absolute;
-  /* 모바일때 header의 높이 */
   top: 0px;
-  left: 0%;
+  right: 100%;
   width: 100%;
   /* 브라우저 전체높이 100vh */
   height: 100vh;
@@ -224,8 +223,8 @@
 }
 
 .mb-navi.mbactive {
-  display: block;
-  right: 0% !important;
+  /* display: block !important; */
+  left: 0 !important;
   opacity: 1 !important;
 }
 
@@ -236,21 +235,12 @@
 .mb-header.hdactive {
   display: none;
 }
+
 /* 반응형 */
 @media screen and (max-width: 768px) {
-  /* .mb-menu-bar {
-    display: block;
-  }
-  .header-bar-right {
-    display: none;
-  } */
-     .mb-menu-bar {
-    display: none;
-  }
   .header-bar-right {
     display: none;
   }
-   
   .header-top {
     height: 150px;
   }
@@ -268,19 +258,11 @@
     position: absolute;
     top: 40px;
     line-height: 30px;
-  }  .header {
-    display: none;
   }
-  .mb-header {
-    display: flex;
-  } 
-}
-
-@media screen and (max-width: 600px) {
   .header {
     display: none;
   }
   .mb-header {
     display: flex;
-  } 
+  }
 }

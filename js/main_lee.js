@@ -28,7 +28,6 @@ window.addEventListener("load", function () {
   // 모바일 메뉴바 클릭하면 메뉴 나오는거
   const mbNavi = document.querySelector(".mb-navi");
   const mbBtn = document.querySelector(".mb-menu");
-  const mbmenubarBtn = document.querySelector(".mb-menu-bar");
   const head = document.querySelector(".header");
   const mbhead = document.querySelector(".mb-header");
   const closeBtn = document.querySelector(".closeBtn");
@@ -36,20 +35,20 @@ window.addEventListener("load", function () {
   mbBtn.addEventListener("click", function () {
     mbNavi.classList.toggle("mbactive");
     mbhead.classList.toggle("hdactive");
-    window.scrollTo(0, 0);
+    // mbactive가 활성화되면 스크롤 없애기
+    if (mbNavi.classList.contains("mbactive")) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
   });
   closeBtn.addEventListener("click", function () {
     mbNavi.classList.remove("mbactive");
     mbhead.classList.remove("hdactive");
     head.classList.remove("hdactive");
+    document.body.style.overflow = "";
   });
 
-  mbmenubarBtn.addEventListener("click", function () {
-    mbNavi.classList.toggle("mbactive");
-    head.classList.toggle("hdactive");
-  });
-
-  // 창 크기가 768px 이상일 때 mbactive 제거
   window.addEventListener("resize", function () {
     if (window.innerWidth >= 768 && mbNavi.classList.contains("mbactive")) {
       mbNavi.classList.remove("mbactive");

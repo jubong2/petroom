@@ -1,7 +1,7 @@
 @charset "UTF-8";
 .join {
   width: 100%;
-  min-width: 345px;
+  min-width: 320px;
 }
 .join .inner {
   width: 1200px;

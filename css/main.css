@@ -43,6 +43,7 @@ a {
 }
 
 .warp {
+
   width: 100%;
   position: relative;
   display: block;
@@ -75,6 +76,7 @@ a {
   }
   .cursor {
     display: none;
+  }
 }
 @media screen and (max-width: 600px) {
   html {
@@ -90,3 +92,4 @@ a {
     font-size: 4px;
   }
 }
+.warp{background-color: antiquewhite;}
