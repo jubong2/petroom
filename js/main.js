@@ -37,13 +37,6 @@ window.addEventListener("load", function () {
       topBtnImg.classList.remove("up");
     }
   });
-  //sns icon Click===============================
-  const button = document.querySelector(".h-icon");
-  const snslog = document.querySelector(".sns-icon");
-  button.addEventListener("click", function () {
-    snslog.classList.toggle("active");
-  });
-  
   //모달창(안내창)=========================
   const body = document.querySelector("body");
   const modal = document.querySelector(".modal-wrap");
@@ -65,12 +58,45 @@ window.addEventListener("load", function () {
     controlScroll(false);
   });
   // 마우스 커서 따라다니기
-  document.addEventListener("mousemove", (e) => {
+  document.addEventListener('mousemove', (e) => {
     let mouseX = e.pageX + 10; // document의 x좌표값
     let mouseY = e.pageY + 10; // document의 y좌표값
-    let cursor = document.querySelector(".cursor");
-    cursor.style.left = mouseX + "px";
-    cursor.style.top = mouseY + "px";
-  }
-);
+
+    let cursor = document.querySelector('.cursor');
+    cursor.style.left = mouseX + 'px';
+    cursor.style.top = mouseY + 'px';
+})
+// const h1 = document.querySelector("h1");
+// const box = document.querySelector(".box");
+// //   마우스 좌표 전달
+// // 도착해야 하는 목표위치값
+// let tgX = 0;
+// let tgY = 0;
+// // 현재위치
+// let x = 0;
+// let y = 0;
+// // 속도
+// let speed = 0.02;
+// //  움직임 함수정의
+// function moveFn(event) {
+//     // 현재 마우스 위치
+//     x = event.clientX;
+//     y = event.clientY;
+//     // 위치값 글자 출력
+//     h1.innerHTML = "x: " + x + ", y:" + y;
+// }
+// window.addEventListener("mousemove", moveFn);
+// // 하드웨어 가속을 이용한 화면 모션 처리
+// function loop() {
+//     // 감속도(부드럽게 목표위치로 간다. smooth)
+//     // 새로운 도착위치값 += (현재위치 - 도착위치) * 소숫점
+//     tgX += (x - tgX) * speed;
+//     tgY += (y - tgY) * speed;
+//     // 화면을 갱신함
+//     box.style.transform = "translate(" + tgX + "px, " + tgY + "px)";
+//     window.requestAnimationFrame(loop);
+// }
+
+// loop();
+
 });
