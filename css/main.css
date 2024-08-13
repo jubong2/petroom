@@ -76,6 +76,7 @@ a {
   .cursor {
     display: none;
 }
+}
 @media screen and (max-width: 600px) {
   html {
     font-size: 5px;
