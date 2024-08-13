@@ -2,7 +2,7 @@ window.addEventListener("load", function () {
   const header = this.document.querySelector(".header");
   const banner = this.document.querySelector(".banner");
   let scy = 0;
-  //   console.log(scy);
+
   this.window.addEventListener("scroll", function () {
     scy = this.window.document.documentElement.scrollTop;
     if (scy > 0) {
@@ -25,7 +25,6 @@ window.addEventListener("load", function () {
     breakpoints: { 1400: { slidesPerView: 4 }, 1100: { slidesPerView: 3 }, 700: { slidesPerView: 2 }, 601: { slidesPerView: 2 } },
   });
 
-  // 모바일 메뉴바 클릭하면 메뉴 나오는거
   const mbNavi = document.querySelector(".mb-navi");
   const mbBtn = document.querySelector(".mb-menu");
   const head = document.querySelector(".header");
@@ -35,13 +34,16 @@ window.addEventListener("load", function () {
   mbBtn.addEventListener("click", function () {
     mbNavi.classList.toggle("mbactive");
     mbhead.classList.toggle("hdactive");
-    // mbactive가 활성화되면 스크롤 없애기
+
+    // 모바일 메뉴 활성화 시 화면을 최상단으로 이동
     if (mbNavi.classList.contains("mbactive")) {
       document.body.style.overflow = "hidden";
+      window.scrollTo(0, 0);
     } else {
       document.body.style.overflow = "";
     }
   });
+
   closeBtn.addEventListener("click", function () {
     mbNavi.classList.remove("mbactive");
     mbhead.classList.remove("hdactive");
@@ -50,10 +52,14 @@ window.addEventListener("load", function () {
   });
 
   window.addEventListener("resize", function () {
-    if (window.innerWidth >= 768 && mbNavi.classList.contains("mbactive")) {
+    if (window.innerWidth >= 768) {
       mbNavi.classList.remove("mbactive");
       head.classList.remove("hdactive");
       mbhead.classList.remove("hdactive");
+      document.body.style.overflow = "";
+    } else if (mbNavi.classList.contains("mbactive")) {
+      document.body.style.overflow = "hidden";
+      window.scrollTo(0, 0);
     }
   });
 });
