@@ -71,7 +71,7 @@
 .sns-icon {
   display: none;
 }
-.sns-btn2:hover .sns-icon {
+.sns-icon.active  {
   display: block;
 }
 .sns-btn2 {
